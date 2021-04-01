@@ -1,0 +1,17 @@
+   /*TITULOS*/
+   h1{
+    text-align: center;
+    color: $colorPrincipal;
+    padding: 3rem;
+}
+h2{
+    text-align: center;
+    color: $colorPrincipal;
+    padding: 3rem;
+}
+/*PARA DEFIR TAMAÑOS DE TITULOS -- @EACH*/
+@each $name, $size in $titulo {
+    .titulo-#{$name}{
+        font-size: $size * 1rem;
+    }
+}

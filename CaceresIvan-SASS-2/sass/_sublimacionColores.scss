@@ -1,0 +1,101 @@
+
+/* mixin */
+@mixin contenidoPaletaColores {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /*para que complete la linea y haga un salto*/
+    transition: transform 0.5s;
+}
+
+@mixin propiedadesColor {
+    width: 5rem;
+    height: 5rem;
+    border: 0.1px solid black;
+}
+
+@mixin hover {
+    transform: scale(1.9);
+cursor: pointer;
+}
+
+
+/*PALETA DE COLORES*/
+
+.PaletaColores1{
+    @include contenidoPaletaColores();
+
+.PaletaColores__Color{
+    @include propiedadesColor();
+}
+.PaletaColores__Color:hover{
+    @include hover();
+}
+}
+@for $i from 1 through 58 {
+    .PaletaColores__Color:nth-child(#{$i}){
+        background-color: rgb($i*10, $i*10/2.5, 50);
+    }
+}
+
+
+.PaletaColores2{
+    @include contenidoPaletaColores();
+
+.PaletaColores2__Color{
+    @include propiedadesColor();
+}
+.PaletaColores2__Color:hover{
+    @include hover();
+}
+}
+@for $i from 1 through 58 {
+    .PaletaColores2__Color:nth-child(#{$i}){
+        background-color: rgb(255, $i*2, 100);
+    }
+}
+
+.PaletaColores3{
+   @include contenidoPaletaColores();
+
+.PaletaColores3__Color{
+    @include propiedadesColor();
+}
+.PaletaColores3__Color:hover{
+    @include hover();
+}
+}
+@for $i from 1 through 58 {
+    .PaletaColores3__Color:nth-child(#{$i}){
+        background-color: rgb(19, $i*5, 90);
+    }
+}
+
+.PaletaColores4{
+   @include contenidoPaletaColores();
+
+.PaletaColores4__Color{
+    @include propiedadesColor();
+}
+.PaletaColores4__Color:hover{
+    @include hover();
+}
+}
+@for $i from 1 through 58 {
+    .PaletaColores4__Color:nth-child(#{$i}){
+        background-color: rgb(100, 255, $i*5-20);
+    }
+}
+
+/*REFERENCIA*/
+
+.PaletaColores1{
+    border: 2px solid red;
+    .PaletaColores__Color{
+        span{
+            margin: auto auto;
+            color: white;   
+            font-size: 2rem;
+    }
+}
+}

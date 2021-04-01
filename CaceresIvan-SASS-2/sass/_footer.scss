@@ -1,0 +1,69 @@
+/*LISTAS INFERIOR*/
+footer{
+    color: $colorNegro;
+            padding: 1rem;
+            text-align: center;
+            margin: 10% auto 0 ;
+   
+
+.listasInferior{
+    color: $colorNegro;
+            display: flex;
+            justify-content: space-evenly;
+            line-height: 1.5;
+
+            li{
+                list-style: none;
+            text-align: center;
+            }
+            ul{
+                margin-top: 3rem;
+            }
+            a{
+                color: $colorNegro;
+            text-decoration: none;
+            line-height: 1.9;
+            }
+            a:hover {
+                color: $colorPrincipal;
+            }
+            p{
+                bottom: 5rem;
+            }
+        }
+}
+@media(max-width: 1400px) {
+    footer{
+        margin-bottom: 2rem;
+        p{
+            margin-top: 4rem;
+        }
+    }
+}
+@media(min-width: 768px) and (max-width: 1024px) {
+    .listasInferior {
+        bottom: 5rem;
+        margin: $contenidoCentrado;
+
+         li{
+            width: 20rem;
+        }
+    }
+    }
+    @media(min-width: 375px) and (max-width: 767px){
+        footer{
+            
+       
+        .listasInferior{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: 5rem;
+        }
+        p{
+            bottom: 5rem;
+        }
+    }
+        
+    }
+
+

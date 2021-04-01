@@ -1,0 +1,66 @@
+/*PAGINA CLIENTES*/
+.clientes p {
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 5rem auto;
+}
+
+.clientes .clientes__contenido {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.clientes .clientes__contenido img {
+  display: block;
+  margin: auto auto;
+  width: 100%;
+}
+
+@media (max-width: 1400px) {
+  .clientes p {
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 1rem auto 2rem;
+    padding: 2rem;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .clientes p {
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 1rem auto 2rem;
+    padding: 2rem;
+    line-height: 4rem;
+  }
+  .clientes .clientes__contenido {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .clientes .clientes__contenido img {
+    display: block;
+    margin: auto auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .clientes p {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0 auto 2rem;
+    padding: 2rem;
+    line-height: 3rem;
+  }
+  .clientes .clientes__contenido {
+    width: 90%;
+    margin: 3rem auto 0rem;
+  }
+  .clientes .clientes__contenido img {
+    display: block;
+    margin: auto auto;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=ContenidoClientes.css.map */
